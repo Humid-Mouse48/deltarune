@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<!-- saved from url=(0065)https://edurocks.org/filestorage/gd/deltarune/chapter5/index.html -->
-<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./DELTARUNE Chapter 5_files/js"></script>
+<html lang="en-us">
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXHK7Q7G3Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-PXHK7Q7G3Z');
 </script>
-
-    <style data-cursor="cursor"></style><style>undefined</style><link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="use-credentials"><link rel="preconnect" href="https://fonts.gstatic.com/"><link rel="stylesheet" href="./DELTARUNE Chapter 5_files/css2"></head><body oncontextmenu="return false;">
-    
-    
-    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>DELTARUNE Chapter 5</title>
+<head>
+    <body oncontextmenu="return false;">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>GM RUNNER</title>
     <style>@-webkit-keyframes rotation {
     from {
         -webkit-transform: rotate(0deg);
@@ -512,7 +512,7 @@ progress[value]::-webkit-progress-value {
     background-color: rgba(128, 128, 128, 0.5) !important;
 }
 </style>
-    <script src="./DELTARUNE Chapter 5_files/jszip.min.js.download"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
         <style>
             #loading-overlay {
                 position: fixed;
@@ -553,19 +553,18 @@ progress[value]::-webkit-progress-value {
                 visibility: hidden;
             }
         </style>
-<script type="module" src="./DELTARUNE Chapter 5_files/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cf16747b69184abc8fca943441b4f21e&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+</head>
 
-
-
-    <div id="loading-overlay" style="display: none;">
-        <div class="spinner" id="spinner" style="display: none;"></div>
-        <div id="loading-log">loaded 100% (13 of 13) bytes</div>
+<body>
+    <div id="loading-overlay">
+        <div class="spinner" id="spinner"></div>
+        <div id="loading-log"></div>
     </div>
     <div id="game-container">
-        <canvas class="emscripten active" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1" width="1280" height="960" style="display: block; cursor: none; height: 911px; width: 1214.67px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);" cursorshover="true"></canvas>
-        <div class="loading hidden-ui">
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
+        <div class="loading">
             <div class="emscripten" id="status"></div>
-            <progress value="0" max="500" id="progress" hidden=""></progress>
+            <progress value="0" max="100" id="progress" hidden="0"></progress>
         </div>
         <div id="mobile-controls">
             <div id="joystick-zone"></div>
@@ -580,12 +579,12 @@ progress[value]::-webkit-progress-value {
             <button class="output-button" onclick="toggleConsole()" title="Lists emscripten/GM console output and loading progress">Toggle Console!</button>
             <button class="output-button" id="stats-button" onclick="toggleFPS()" title="Toggles the external FPS Counter">Toggle FPS Counter!</button>
             <button class="output-button" onclick="window.DeltaruneSaveManager.openSaveManager()" title="Manage your DELTARUNE save files">Save Manager!</button>
-            <button class="output-button" onclick="toggleWASD()" title="Toggles Mirroring Arrow Keys to WASD for easier control">Toggle Arrow &amp; WASD Controls!</button>
+            <button class="output-button" onclick="toggleWASD()" title="Toggles Mirroring Arrow Keys to WASD for easier control">Toggle Arrow & WASD Controls!</button>
             <input id="colorpicker" type="color" onchange="changecolor(this)" title="Changes Color of the Website's Background">
             <textarea id="output"></textarea>
         </div>
-        <button id="closeUIButton" onclick="hideUI()" style="display: none;">×</button>
-        <div id="message-container" class="hidden-ui">
+        <button id="closeUIButton" onclick="hideUI()">&times;</button>
+        <div id="message-container">
             <div id="messages"></div>
         </div>
     </div>
@@ -599,9 +598,9 @@ progress[value]::-webkit-progress-value {
 
     <div id="saveManagerModal" class="save-manager-modal">
         <div class="save-manager-content">
-            <span class="close-button" onclick="window.DeltaruneSaveManager.closeSaveManager()">×</span>
+            <span class="close-button" onclick="window.DeltaruneSaveManager.closeSaveManager()">&times;</span>
             <div class="save-manager-content2">
-                <span class="minimize-button" onclick="window.DeltaruneSaveManager.closeSMnoreload()">‐</span>
+                <span class="minimize-button" onclick="window.DeltaruneSaveManager.closeSMnoreload()">&dash;</span>
                 <h2>Save File Manager!</h2>
                 <button class="output-button" onclick="toggleclear_site_cache()">Wipe all of your saves?</button>
                 <button id="exportAllBtn" class="output-button" onclick="DeltaruneSaveManager.exportAllToZip()">Export all saves to ZIP?</button>
@@ -611,7 +610,7 @@ progress[value]::-webkit-progress-value {
                 </div>
                 <div class="file-upload-section">
                     <h3>Import Save Files?</h3>
-                    <input type="file" id="uploadFileInput" accept="*" multiple="">
+                    <input type="file" id="uploadFileInput" accept="*" multiple>
                         <input type="text" id="uploadFileNameInput" placeholder="Enter the corresponding filename (e.g., filech1_0, dr.ini / for single file only)">
                             <button onclick="DeltaruneSaveManager.handleUpload()">Select File(s)!</button>
                         </div>
@@ -1763,7 +1762,7 @@ progress[value]::-webkit-progress-value {
     });
 });
 </script>
-        <script src="./DELTARUNE Chapter 5_files/nipplejs.min.js.download"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.10.1/nipplejs.min.js"></script>
         <script>
             function toggleFullscreen() {
                 const doc = document;
@@ -1828,6 +1827,6 @@ progress[value]::-webkit-progress-value {
                 }
             };
         </script>
+</body>
 
-
-</div><script src="./DELTARUNE Chapter 5_files/runner.js.download"></script></body></html>
+</html>
